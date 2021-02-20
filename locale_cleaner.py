@@ -110,7 +110,7 @@ for localtext in localeFileName:
 				calculateReadCount+=1
 				print "Python files reading status: %d\n"% (calculateReadCount*float(float(100)/float(calculateMaxCount)))
 
-def getOldLocaleItems(text, type):
+def getOldLocaleItems(text, localeName):
 	index = localeFileName.index(localeName)
 	for item in oldlocaleData[index]:
 		if text == item[0]:
